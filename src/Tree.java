@@ -23,12 +23,23 @@ public class Tree {
          * Precondition: if <root> is None, then <subtrees> is empty. */
         this.root = root;
         if (subtrees == null) {
-            this.subtrees = ArrayList();
+            this.subtrees = new ArrayList<>();
         }
         else {
             this.subtrees = subtrees;
         }
     }
 
-    public static bool is_empty()
+    public static boolean is_empty(){
+        /**
+         * Return whether this tree is empty.
+         *
+         *         >>> t1 = Tree(None, [])
+         *         >>> t1.is_empty()
+         *         True
+         *         >>> t2 = Tree(3, [])
+         *         >>> t2.is_empty()
+         *         False
+         */
+    }
 }
